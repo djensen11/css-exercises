@@ -1,0 +1,15 @@
+.imposter, 
+.legit {
+    font-size: 32px;
+    font-family: "Helvetica", "Times New Roman" sans-serif;
+    align-items: center;
+}
+
+.imposter {
+    background-color: black;
+    color:white;
+}
+
+.legit  {
+    background-color: yellow;
+}
