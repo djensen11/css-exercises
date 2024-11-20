@@ -27,3 +27,68 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Additions */
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main-content {
+  display:flex;
+  flex:1; 
+  /* was missing this last flex declaration, which allows everything to expand to fit */
+}
+
+.sidebar {
+  flex-shrink: 0;
+  /* similarly, this keeps my sidebar the same size regardless */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+
+li {
+  padding: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding:54px;
+  gap:32px;
+}
+
+.card {
+  display: flex;
+  width:300px;
+  margin: 12px;
+  padding: 24px;
+  box-shadow: 10px 5px 5px #eee;
+  align-items: start;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
